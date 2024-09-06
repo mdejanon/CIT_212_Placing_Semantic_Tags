@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placing Semantic Tags | CIT212</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            border: 3px solid grey;
+        }
+
+        header { /* header is a tag, no . */
+            width: 100%;
+            height: 100px;
+            background-color: #990000;
+            color: #edebeb;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        header img { /* any img tag, within the header */
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 50px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #edebeb;
+            color: #990000;
+            width: 100%;
+        }
+
+        .wrapper{
+            padding:3px;
+            width: 100%;
+        }
+
+
+        .videocontainer {
+            position: absolute;
+            top: 140px;
+            width: 100%;
+            border-top:10px dashed #990000;
+            margin-top: 15px;
+        }
+
+        figure {
+            width:auto;
+            height: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+        }
+
+        iframe { /* Had to search online how to center the embeded video */
+            margin: auto;
+            display: block;
+        }
+
+        .contents {
+            position: absolute;
+            top: 585px;
+            border-top:10px dashed #990000;
+            width: 100%;
+        }
+
+        .articles { /* This is a class, so the . is needed */
+            width: 60%;
+            background-color: #edebeb;
+            border: 2px solid #990000;
+            margin-top: 15px;
+        }
+
+        article {
+            width:90%;
+            height: 45%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border: 5px solid grey;
+            border-radius: 15px;
+        }
+
+        aside {
+            position: absolute;
+            top: 5px;
+            left: 65%;
+            width: 30%;
+            background-color: #edebeb;
+            border: 2px solid #990000;
+            margin-top: 15px;
+            padding: 5px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 2px;
+            width: 100%;
+            text-align: center;
+            background-color: #edebeb;
+            color: #990000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header><img src="trident.png">
+        Indiana University In the News</header>
+        <nav>Home -- About -- Contact</nav>
+        <div class="videocontainer">
+            <figure>
+                <h2 style="text-align: center;">IU Research Video: Tissue Nanotransfection</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PYS4B5eQQx8?si=NcTnjNJvNimBupcV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption style="text-align: center;">Video - IU School of Medicine on Tissue Nanotransfection</figcaption>
+            </figure>
+        </div>  
+        <div class="contents">
+            <div class="articles">
+                <article>
+                      <h1>Silicon Chip Implant Marvel</h1>
+                       <p>In recent years, scientists have developed a method to revert specialized adult cells into stem cells, which can then be used to grow various tissues and organs compatible with the patient. However, this process is complex and risky. </p>
+                       <p>A Indiana University (IU) team led by Chandan Sen at the Indiana University School of Medicine, has developed a simpler approach called tissue nano-transfection. This technology uses a silicon nanochip with micro-needles to deliver specific genes into living tissue, reprogramming cells to become different types of cells or tissues. This method can repair damage locally or in other parts of the body, such as the brain. </p>
+                       <p>The technology is being developed for clinical use, with potential applications in civilian and military medicine, including repairing brain damage and reversing nerve damage. The team is working on securing FDA approval to begin clinical research.</p>
+                </article>
+                <article>
+                    <h1>Legal Implications, IU School Of Medicine </h1>
+                    <p>Conducting this kind of research comes with duties and responsabilites.  IU researches have to take into account the possible legal implications and should take into consideration these points:</p>
+                     <ul>
+                          <li>FDA Approval: Necessary for clinical use; involves regulatory compliance and safety standards.</li>
+                          <li>Intellectual Property: Protecting patents and avoiding infringement.</li>
+                          <li>Clinical Research: Adhering to ethical guidelines and ensuring patient safety.</li>
+                         <li>Risk of Cancerous Cells: Potential liability if adverse effects occur.</li>
+                         <li>Medical Device Regulations: Compliance with manufacturing and marketing laws.</li>
+                          <li>Data Privacy: Protecting patient data in accordance with privacy laws.</li>
+                      </ul>
+                </article>
+            </div>
+            <aside>
+                <h2>Other Areas of Research</h2>
+                <p>Apart from the main focus of this research (nano-transfection), there are additional research areas including stem cell reversion, gene therapy, regenerative medicine, and various clinical applications like repairing brain and nerve damage.</p>
+            </aside>
+        </div>
+    </div>
+    <footer>2024, Copyright -- Max De Janon -- Purdue CIT Web Design</footer>
+        
+</body>
+</html>
